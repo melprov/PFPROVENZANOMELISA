@@ -1,0 +1,27 @@
+
+/*VARIABLES*/
+$fuente-principal: 'tajwal', sans-serif;
+
+/*VARIABLES PARA CONDICIONALES*/
+$vista: 'mobile';
+
+/*MAPA DE COLORES*/
+$colores:(
+    principal: rgb(10, 0, 61),
+    seceundario: black,
+    terciario: none,
+);
+
+/*MIXINS*/
+
+@mixin flex1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+@mixin flex2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+

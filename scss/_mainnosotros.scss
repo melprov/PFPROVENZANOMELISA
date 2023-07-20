@@ -1,0 +1,29 @@
+/*MAIN DE NOSOTROS*/
+.nosotros{
+    @include flex2;
+    align-items: center;
+    background:linear-gradient(to right,rgba(255, 240, 240, 0.774),rgba(232, 113, 113, 0.5)) ;
+    height: 500px;
+    .nosotros__titulo{
+        font-size: 3rem;
+        font-family: $fuente-principal;
+        font-weight: 900;
+        @if $vista == mobile {
+            @media screen and (max-width: 600px){
+                font-size: 2rem;
+            }
+        }
+    }
+    .nosotros__parrafo{
+        font-size: 1rem;
+        font-family: $fuente-principal;
+        font-weight: 300;
+        width: 500px;
+        margin-top: 30px;
+        @if $vista == mobile {
+            @media screen and (max-width: 600px){
+                width: 50%;
+            }
+        }
+    }
+}

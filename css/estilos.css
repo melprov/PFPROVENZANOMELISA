@@ -7,6 +7,9 @@
 }
 
 /*VARIABLES*/
+/*VARIABLES PARA CONDICIONALES*/
+/*MAPA DE COLORES*/
+/*MIXINS*/
 /*aca comienza el header de todas las paginas*/
 .encabezado {
   display: flex;
@@ -46,7 +49,6 @@
 }
 
 /*aca termina el header de todas las paginas*/
-/*aca comienza el main*/
 /*MAIN DE INICIO*/
 .titulo1 {
   display: flex;
@@ -164,7 +166,7 @@
   margin-right: 100px;
 }
 
-/*MAIN DE PRODUCTOS*/
+/*MAIN DE PRODUCTOS Y SECCIONES DE PRODUCTOS*/
 .mainproductos {
   display: grid;
   grid-template-areas: ". buscador buscador buscador" "lista prod prod prod" "lista prod prod prod" "lista prod prod prod";
@@ -208,6 +210,13 @@
   grid-template-rows: 300px 300px 300px;
   column-gap: 0px;
   row-gap: 0px;
+}
+@media screen and (max-width: 600px) {
+  .mainproductos .grillaproductos {
+    grid-area: prod;
+    display: grid;
+    grid-template-columns: 300px;
+  }
 }
 .mainproductos .grillaproductos .cajaproducto {
   margin: 0px;
@@ -256,12 +265,22 @@
   font-family: "tajwal", sans-serif;
   font-weight: 900;
 }
+@media screen and (max-width: 600px) {
+  .nosotros .nosotros__titulo {
+    font-size: 2rem;
+  }
+}
 .nosotros .nosotros__parrafo {
   font-size: 1rem;
   font-family: "tajwal", sans-serif;
   font-weight: 300;
   width: 500px;
   margin-top: 30px;
+}
+@media screen and (max-width: 600px) {
+  .nosotros .nosotros__parrafo {
+    width: 50%;
+  }
 }
 
 /*MAIN DE AYUDA*/

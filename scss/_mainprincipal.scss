@@ -1,0 +1,114 @@
+/*MAIN DE INICIO*/
+.titulo1{
+    @include flex2;
+    font-family: $fuente-principal;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.774);
+    height: 200px;
+    background:linear-gradient(to right,rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../assets/imagenes/somostucompañerodemate.jpg");
+    background-size:cover;
+    background-position:center;
+}
+/*seccion datos*/
+.backdatos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    background-color: rgba(0, 68, 78, 0.131);
+    background-color: wheat;
+    .datos{
+        font-family: $fuente-principal;
+        font-size: 1rem;
+        font-weight: 500;
+        color: black;
+        padding-bottom: 10px;
+        padding-top: 15px;
+        width: 400px;    
+        .imagendatos{
+            height: 50px;
+        
+        }
+    }
+}
+/*seccion enlaces*/
+.enlacesvarios{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: normal;
+    background:linear-gradient(to right,rgba(255, 240, 240, 0.774),rgba(232, 113, 113, 0.5)) ;
+    padding-bottom: 10px;
+    
+
+@media screen and (max-width: 600px){
+    .parrafo1{
+        display: none;
+    }
+    .parrafo2{
+        display: none;
+    }
+
+}
+    .enlaces1{
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        .parrafo1{
+            font-family: $fuente-principal;
+            font-size: 1.3rem;
+            font-weight:700;
+            color: black;
+            padding-top: 60px;
+            margin-left: 110px;
+        }
+        .nav1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: $fuente-principal;
+            font-size: 1.5rem;
+            font-weight:900;
+            text-decoration: none;
+            color: white;
+            height: 80px;
+            width: 200px;
+            background-color:map-get($colores, principal);
+            border-radius: 20px;
+            margin-top: 27px;
+            margin-left: 100px;
+        }
+    }
+    .enlaces2{
+        height: 120px;
+        display: flex;
+        flex-direction: row-reverse;
+        .parrafo2{
+            font-family: $fuente-principal;
+            font-size: 1.3rem;
+            font-weight:700;
+            color: black;
+            padding-top: 60px;
+            margin-right: 110px;
+        }
+        .nav2{
+            @include flex2;
+            align-items: center;
+            font-family: $fuente-principal;
+            font-size: 1.5rem;
+            font-weight:900;
+            text-decoration: none;
+            color: white;
+            height: 80px;
+            width: 200px;
+            background-color: map-get($colores, principal);
+            border-radius: 20px;
+            margin-top: 27px;
+            margin-right: 100px;
+        }   
+    }
+}

@@ -1,0 +1,47 @@
+/*MAIN DE CONTACTO*/
+
+.contactomain{
+    background:linear-gradient(to right,rgba(255, 240, 240, 0.774),rgba(232, 113, 113, 0.5));
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .titulocontacto{
+        font-size: 2.5rem;
+        font-family: $fuente-principal;
+        font-weight: 900;
+    }
+    .parrafocontacto{
+        font-size: 1rem;
+        font-family: $fuente-principal;
+        font-weight: 700;
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+    .mapa{
+        font-size: 1rem;
+        font-family: $fuente-principal;
+        font-weight: 300;
+        .mapacontacto{
+            height: 50%;
+            width: 50%;
+        }
+    }
+    @media screen and (max-width: 600px){
+        .titulocontacto{
+            font-size: 2rem;
+        }
+    }
+    .mb-3{
+        font-size: 1rem;
+        font-family: $fuente-principal;
+    }
+    .btn-primary{
+        background-color: map-get($colores, principal);
+        border-color:map-get($colores, principal) ;
+        &:hover{
+            .btn-primary{
+                background-color:map-get($colores, principal);
+                border-color: rgba(16, 4, 75, 0.882) ;
+            }
+        }
+    }
+}

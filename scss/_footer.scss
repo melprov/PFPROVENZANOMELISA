@@ -1,0 +1,42 @@
+
+
+/*aca comienza el footer de todas las paginas - la nav esta arriba*/
+
+.piepagina{
+    background-color: map-get($colores, principal);
+    @media screen and (max-width: 600px){
+        .navfooter{
+            display: none;
+        }
+    }
+    /*iconos footer e info*/
+    .info{
+        @include flex1;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .infoUno{
+            margin: 5px;
+        }
+        .infoDos{
+            margin: 5px;
+        }
+        .imagenredes{
+            width: 25px;
+            height: 25px;
+        }
+    }
+    .derechos{
+        color: white;
+        font-size: 1rem;
+        font-family: $fuente-principal;
+        font-weight: 200;
+        text-align: center;
+        .botonwhat{
+            position: fixed;
+            bottom: 10%;
+            right: 5%;
+            width: 60px;
+            height: 60px;
+        }
+    }
+}

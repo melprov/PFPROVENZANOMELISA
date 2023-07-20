@@ -1,0 +1,32 @@
+/*MAIN DE AYUDA*/
+.preguntas{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    background:linear-gradient(to right,rgba(255, 240, 240, 0.774),rgba(232, 113, 113, 0.5));
+    padding-left: 40px;
+    .preguntasfrecuentes{
+        @include flex1;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 2.5rem;
+        font-family: $fuente-principal;
+        font-weight: 900;
+    }
+    .cpregunta{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        .preguntastitulo{
+            font-size: 2rem;
+            font-family: $fuente-principal;
+            font-weight: 700;
+            padding-bottom: 10px;
+        }
+        .parrafopreg{
+            font-size: 1rem;
+            font-family: $fuente-principal;
+            font-weight: 200;
+            padding-bottom: 10px;
+        }
+    }
+}

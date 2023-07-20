@@ -1,0 +1,34 @@
+
+/*aca comienza el header de todas las paginas*/  
+.encabezado{
+    @include flex1;
+    padding-top: 10px;
+    background-color: map-get($colores, principal);
+    .encabezado__logo{
+        height: 64px;
+        width: 64px;
+    }
+}
+.navegacion{
+    @include flex1;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    text-decoration: none;
+    list-style-type: none;
+    background-color: map-get($colores, principal);
+}
+/*navegacion igual para header y footer de todas las paginas*/  
+.nav{
+font-family: $fuente-principal;
+font-weight:300;
+font-size: 1.1rem;
+text-decoration: none;
+display: inline;
+color: white;
+padding:10px;
+margin: 8px;
+border-radius: 5px;
+border-style: hidden;
+}
+/*aca termina el header de todas las paginas*/  
+

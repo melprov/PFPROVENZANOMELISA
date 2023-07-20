@@ -1,0 +1,87 @@
+/*MAIN DE PRODUCTOS Y SECCIONES DE PRODUCTOS*/
+
+.mainproductos{
+    display: grid;
+    grid-template-areas: 
+    ". buscador buscador buscador"
+    "lista prod prod prod"
+    "lista prod prod prod"
+    "lista prod prod prod";
+    padding-top: 20px;
+    background:linear-gradient(to right,rgba(255, 240, 240, 0.774),rgba(232, 113, 113, 0.5)) ;
+    .buscadorproducto{
+        grid-area: buscador;
+        border-color:map-get($colores, principal) ;
+        margin-bottom: 20px;
+        margin-left: 25px;
+    }
+    .listaproductos{
+        grid-area: lista;
+        .listaproductos__navegacion{
+            display: list-item;
+            display: flex;
+            flex-direction: column;
+            border-style: none;
+            border-radius: 5%;
+            background-color: rgb(227, 229, 230);
+            margin-right: 20px;
+            .navproductos{
+                text-decoration-line: none;
+                font-family: $fuente-principal;
+                font-size: 1rem;
+                font-weight:300;
+                color:map-get($colores, principal);
+                border-color: map-get($colores, principal);
+                border-radius: 5%;
+                margin-left: 10px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .grillaproductos{
+        grid-area: prod;
+        display: grid;
+        grid-template-columns:300px 300px 300px;
+        grid-template-rows: 300px 300px 300px;
+        column-gap: 0px;
+        row-gap: 0px;
+        @if $vista == mobile {
+            @media screen and (max-width: 600px){
+                grid-area: prod;
+                display: grid;
+                grid-template-columns:300px;
+            }
+        }
+        .cajaproducto{
+            margin: 0px;
+            padding: 0px;
+            width: 250px;
+            height: 250px;
+            @include flex2;
+            align-items: center;
+            .fproductos{
+                margin-top: 40px;
+                width: 200px;
+                height: 200px;
+                border-color:map-get($colores, principal);
+                border-style: ridge;
+                border-radius: 2%;
+                border-width: 1px;
+            }
+            .titulop{
+                font-family: $fuente-principal;
+                font-size: 1.3rem;
+                font-weight: 100;
+                color: map-get($colores, principal);
+                margin-top: 15px;
+            }
+            .descripcionp{
+                font-family: $fuente-principal;
+                font-size: 1rem;
+                font-weight: 100;
+                color: map-get($colores, principal);
+            }
+        }
+    }
+}
