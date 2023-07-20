@@ -135,6 +135,10 @@
   margin-top: 27px;
   margin-left: 100px;
 }
+.enlacesvarios .enlaces1 .nav1:hover {
+  transform: scale(1.2, 1.2);
+  cursor: pointer;
+}
 .enlacesvarios .enlaces2 {
   height: 120px;
   display: flex;
@@ -164,6 +168,10 @@
   border-radius: 20px;
   margin-top: 27px;
   margin-right: 100px;
+}
+.enlacesvarios .enlaces2 .nav2:hover {
+  transform: scale(1.2, 1.2);
+  cursor: pointer;
 }
 
 /*MAIN DE PRODUCTOS Y SECCIONES DE PRODUCTOS*/
@@ -236,6 +244,10 @@
   border-style: ridge;
   border-radius: 2%;
   border-width: 1px;
+}
+.mainproductos .grillaproductos .cajaproducto .fproductos:hover {
+  transform: scale(1.1, 1.1);
+  cursor: pointer;
 }
 .mainproductos .grillaproductos .cajaproducto .titulop {
   font-family: "tajwal", sans-serif;
@@ -403,6 +415,10 @@
   right: 5%;
   width: 60px;
   height: 60px;
+}
+.piepagina .derechos .botonwhat:hover {
+  transform: scale(1.3, 1.3);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=estilos.css.map */

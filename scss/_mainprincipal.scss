@@ -81,6 +81,10 @@
             border-radius: 20px;
             margin-top: 27px;
             margin-left: 100px;
+            &:hover{
+                transform: scale(1.2,1.2);
+                cursor: pointer;
+            }
         }
     }
     .enlaces2{
@@ -109,6 +113,10 @@
             border-radius: 20px;
             margin-top: 27px;
             margin-right: 100px;
+            &:hover{
+                transform: scale(1.2,1.2);
+                cursor: pointer;
+            }
         }   
     }
 }
