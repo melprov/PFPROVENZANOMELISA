@@ -1,0 +1,411 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*VARIABLES*/
+$color-principal: rgb(10, 0, 61);
+$fuente-principal: 'tajwal', sans-serif;
+
+
+
+
+
+
+/*aca comienza el header de todas las paginas*/  
+.encabezado{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 10px;
+    background-color: $color-principal;
+    .encabezado__logo{
+        height: 64px;
+        width: 64px;
+    }
+}
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    text-decoration: none;
+    list-style-type: none;
+    background-color: $color-principal;
+
+}
+/*navegacion igual para header y footer de todas las paginas*/  
+.nav{
+font-family: $fuente-principal;
+font-weight:300;
+font-size: 1.1rem;
+text-decoration: none;
+display: inline;
+color: white;
+padding:10px;
+margin: 8px;
+border-radius: 5px;
+border-style: hidden;
+}
+/*aca termina el header de todas las paginas*/  
+
+/*aca comienza el main*/
+/*MAIN DE INICIO*/
+.titulo1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: $fuente-principal;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.774);
+    height: 200px;
+    background:linear-gradient(to right,rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../assets/imagenes/somostucompañerodemate.jpg");
+    background-size:cover;
+    background-position:center;
+}
+/*seccion datos*/
+.backdatos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    background-color: rgba(0, 68, 78, 0.131);
+    background-color: wheat;
+    .datos{
+        font-family: $fuente-principal;
+        font-size: 1rem;
+        font-weight: 500;
+        color: black;
+        padding-bottom: 10px;
+        padding-top: 15px;
+        width: 400px;    
+        .imagendatos{
+            height: 50px;
+        
+        }
+    }
+}
+/*seccion enlaces*/
+.enlacesvarios{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: normal;
+    background:linear-gradient(to right,rgba(255, 240, 240, 0.774),rgba(232, 113, 113, 0.5)) ;
+    padding-bottom: 10px;
+    
+
+@media screen and (max-width: 600px){
+    .parrafo1{
+        display: none;
+    }
+    .parrafo2{
+        display: none;
+    }
+
+}
+    .enlaces1{
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        .parrafo1{
+            font-family: $fuente-principal;
+            font-size: 1.3rem;
+            font-weight:700;
+            color: black;
+            padding-top: 60px;
+            margin-left: 110px;
+        }
+        .nav1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: $fuente-principal;
+            font-size: 1.5rem;
+            font-weight:900;
+            text-decoration: none;
+            color: white;
+            height: 80px;
+            width: 200px;
+            background-color:$color-principal ;
+            border-radius: 20px;
+            margin-top: 27px;
+            margin-left: 100px;
+        }
+    }
+    .enlaces2{
+        height: 120px;
+        display: flex;
+        flex-direction: row-reverse;
+        .parrafo2{
+            font-family: $fuente-principal;
+            font-size: 1.3rem;
+            font-weight:700;
+            color: black;
+            padding-top: 60px;
+            margin-right: 110px;
+        }
+        .nav2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: $fuente-principal;
+            font-size: 1.5rem;
+            font-weight:900;
+            text-decoration: none;
+            color: white;
+            height: 80px;
+            width: 200px;
+            background-color:$color-principal ;
+            border-radius: 20px;
+            margin-top: 27px;
+            margin-right: 100px;
+        }   
+    }
+}
+
+/*MAIN DE PRODUCTOS*/
+
+.mainproductos{
+    display: grid;
+    grid-template-areas: 
+    ". buscador buscador buscador"
+    "lista prod prod prod"
+    "lista prod prod prod"
+    "lista prod prod prod";
+    padding-top: 20px;
+    background:linear-gradient(to right,rgba(255, 240, 240, 0.774),rgba(232, 113, 113, 0.5)) ;
+    .buscadorproducto{
+        grid-area: buscador;
+        border-color:$color-principal ;
+        margin-bottom: 20px;
+        margin-left: 25px;
+    
+    }
+    .listaproductos{
+        grid-area: lista;
+        .listaproductos__navegacion{
+            display: list-item;
+            display: flex;
+            flex-direction: column;
+            border-style: none;
+            border-radius: 5%;
+            background-color: rgb(227, 229, 230);
+            margin-right: 20px;
+            .navproductos{
+                text-decoration-line: none;
+                font-family: $fuente-principal;
+                font-size: 1rem;
+                font-weight:300;
+                color:$color-principal;
+                border-color: $color-principal;
+                border-radius: 5%;
+                margin-left: 10px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+        }
+        
+    }
+    .grillaproductos{
+        grid-area: prod;
+        display: grid;
+        grid-template-columns:300px 300px 300px;
+        grid-template-rows: 300px 300px 300px;
+        column-gap: 0px;
+        row-gap: 0px;
+        .cajaproducto{
+            margin: 0px;
+            padding: 0px;
+            width: 250px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .fproductos{
+                margin-top: 40px;
+                width: 200px;
+                height: 200px;
+                border-color:$color-principal;
+                border-style: ridge;
+                border-radius: 2%;
+                border-width: 1px;
+            }
+            .titulop{
+                font-family: $fuente-principal;
+                font-size: 1.3rem;
+                font-weight: 100;
+                color: $color-principal;
+                margin-top: 15px;
+            }
+            .descripcionp{
+                font-family: $fuente-principal;
+                font-size: 1rem;
+                font-weight: 100;
+                color: $color-principal;
+            }
+        }
+    }
+}
+/*MAIN DE NOSOTROS*/
+
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to right,rgba(255, 240, 240, 0.774),rgba(232, 113, 113, 0.5)) ;
+    height: 500px;
+    .nosotros__titulo{
+        font-size: 3rem;
+        font-family: $fuente-principal;
+        font-weight: 900;
+    }
+    .nosotros__parrafo{
+        font-size: 1rem;
+        font-family: $fuente-principal;
+        font-weight: 300;
+        width: 500px;
+        margin-top: 30px;
+    }
+}
+/*MAIN DE AYUDA*/
+
+.preguntas{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    background:linear-gradient(to right,rgba(255, 240, 240, 0.774),rgba(232, 113, 113, 0.5));
+    padding-left: 40px;
+    .preguntasfrecuentes{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 2.5rem;
+        font-family: $fuente-principal;
+        font-weight: 900;
+    }
+    .cpregunta{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        .preguntastitulo{
+            font-size: 2rem;
+            font-family: $fuente-principal;
+            font-weight: 700;
+            padding-bottom: 10px;
+        }
+        .parrafopreg{
+            font-size: 1rem;
+            font-family: $fuente-principal;
+            font-weight: 200;
+            padding-bottom: 10px;
+        }
+    }
+}
+/*MAIN DE CONTACTO*/
+
+.contactomain{
+    background:linear-gradient(to right,rgba(255, 240, 240, 0.774),rgba(232, 113, 113, 0.5));
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .titulocontacto{
+        font-size: 2.5rem;
+        font-family: $fuente-principal;
+        font-weight: 900;
+    }
+    .parrafocontacto{
+        font-size: 1rem;
+        font-family: $fuente-principal;
+        font-weight: 700;
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+    .mapa{
+        font-size: 1rem;
+        font-family: $fuente-principal;
+        font-weight: 300;
+        .mapacontacto{
+            height: 50%;
+            width: 50%;
+        }
+    }
+    @media screen and (max-width: 600px){
+        .titulocontacto{
+            font-size: 2rem;
+        }
+    }
+    .mb-3{
+        font-size: 1rem;
+        font-family: $fuente-principal;
+    }
+    .btn-primary{
+        background-color: $color-principal;
+        border-color:$color-principal ;
+        &:hover{
+            .btn-primary{
+                background-color: $color-principal;
+                border-color: rgba(16, 4, 75, 0.882) ;
+            }
+        }
+    }
+}
+/*aca comienza el footer de todas las paginas - la nav esta arriba*/
+
+.piepagina{
+    background-color: $color-principal;
+    @media screen and (max-width: 600px){
+        .navfooter{
+            display: none;
+        }
+    }
+    /*iconos footer e info*/
+    .info{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .infoUno{
+            margin: 5px;
+        }
+        .infoDos{
+            margin: 5px;
+        }
+        .imagenredes{
+            width: 25px;
+            height: 25px;
+        }
+    }
+    .derechos{
+        color: white;
+        font-size: 1rem;
+        font-family: $fuente-principal;
+        font-weight: 200;
+        text-align: center;
+        .botonwhat{
+            position: fixed;
+            bottom: 10%;
+            right: 5%;
+            width: 60px;
+            height: 60px;
+        }
+    }
+}
+
+
+
+
