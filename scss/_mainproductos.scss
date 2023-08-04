@@ -12,30 +12,30 @@
     .buscadorproducto{
         grid-area: buscador;
         border-color:map-get($colores, principal) ;
+        border-radius: 5%;
         margin-bottom: 20px;
         margin-left: 25px;
     }
     .listaproductos{
         grid-area: lista;
-        .listaproductos__navegacion{
-            display: list-item;
-            display: flex;
+        margin-left: 15%;
+        .menuprod{
+            background-color: map-get($colores, principal);
+        }
+        .dropdown-menu{
             flex-direction: column;
             border-style: none;
             border-radius: 5%;
-            background-color: rgb(227, 229, 230);
+            background-color: map-get($colores, principal);
             margin-right: 20px;
-            .navproductos{
-                text-decoration-line: none;
+            .dropdown-item{
                 font-family: $fuente-principal;
                 font-size: 1rem;
                 font-weight:300;
-                color:map-get($colores, principal);
-                border-color: map-get($colores, principal);
-                border-radius: 5%;
-                margin-left: 10px;
-                margin-top: 5px;
-                margin-bottom: 5px;
+                color:white;
+                &:hover{
+                    background-color:map-get($colores, principal);
+                }
             }
         }
     }

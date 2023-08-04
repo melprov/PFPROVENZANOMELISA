@@ -184,32 +184,32 @@
 .mainproductos .buscadorproducto {
   grid-area: buscador;
   border-color: rgb(10, 0, 61);
+  border-radius: 5%;
   margin-bottom: 20px;
   margin-left: 25px;
 }
 .mainproductos .listaproductos {
   grid-area: lista;
+  margin-left: 15%;
 }
-.mainproductos .listaproductos .listaproductos__navegacion {
-  display: list-item;
-  display: flex;
+.mainproductos .listaproductos .menuprod {
+  background-color: rgb(10, 0, 61);
+}
+.mainproductos .listaproductos .dropdown-menu {
   flex-direction: column;
   border-style: none;
   border-radius: 5%;
-  background-color: rgb(227, 229, 230);
+  background-color: rgb(10, 0, 61);
   margin-right: 20px;
 }
-.mainproductos .listaproductos .listaproductos__navegacion .navproductos {
-  text-decoration-line: none;
+.mainproductos .listaproductos .dropdown-menu .dropdown-item {
   font-family: "tajwal", sans-serif;
   font-size: 1rem;
   font-weight: 300;
-  color: rgb(10, 0, 61);
-  border-color: rgb(10, 0, 61);
-  border-radius: 5%;
-  margin-left: 10px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  color: white;
+}
+.mainproductos .listaproductos .dropdown-menu .dropdown-item:hover {
+  background-color: rgb(10, 0, 61);
 }
 .mainproductos .grillaproductos {
   grid-area: prod;
